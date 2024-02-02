@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {useLoaderData} from 'react-router-dom'
 
 function Github() {
@@ -19,7 +19,7 @@ function Github() {
         <div className='text-center m-4 bg-gray-600 text-white p-4 text-3xl'>
             Github Followers : {data.followers}
         <h1>{data.name}</h1>
-        <img src={data.avatar_url} alt="" width={300}/>
+        <img src={data.avatar_url} alt="" width={300} style={{borderRadius:'50%'}}/>
         <p>Bio: {data.bio}</p>
         </div>
     )
